@@ -71,7 +71,7 @@ export default function page() {
       <div className='mt-24 md:mt-40 xl:ml-[48px]'>
         <h2 className='font-greatVibes text-primary font-normal leading-10 text-[30px] 2xl:text-[32px] text-center'>Food Category </h2>
         <h1 className='text-white font-bold text-[48px] leading-[56px] text-center'><span className='text-primary'>Ch</span>oose Food Item</h1>
-        <div className='flex justify-between items-center md:mt-14 mb-20 flex-col md:flex-row md:flex-wrap gap-8 md:mx-5 lg:justify-evenly xl:flex-row xl:mr-[200px] xl:ml-[300px]'>
+        <div className='flex justify-between items-center md:mt-14 mb-20 flex-col gap-8 md:mx-5 lg:flex-row lg:justify-evenly lg:flex-wrap xl:flex-row xl:mr-[200px] xl:ml-[150px]'>
           <Image src={Food1} alt="foodimage" className='w-[306px] h-[329px]' />
           <Image src={Food2} alt="foodimage" className='w-[306px] h-[329px]' />
           <Image src={Food3} alt="foodimage" className='w-[306px] h-[329px]' />
