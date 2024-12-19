@@ -18,6 +18,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+
+      backgroundImage: {
+        'hero-image': "url('/heroimage.png')",
+      },
     },
   },
   plugins: [],

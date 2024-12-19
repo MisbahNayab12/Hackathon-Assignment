@@ -15,25 +15,25 @@ export default function Navbar() {
                     <div id="anchors" className='hidden md:flex'>
                         <ul className=' text-white flex gap-8'>
                             <li>
-                                <Link href="/" className=''>Home</Link>
+                                <Link href="/" className='hover:text-primary'>Home</Link>
                             </li>
                             <li>
-                                <Link href="#menu" className=''>Menu</Link>
+                                <Link href="/Menu" className='hover:text-primary'>Menu</Link>
                             </li>
                             <li>
-                                <Link href="#blog" className=''>Blog</Link>
+                                <Link href="#blog" className='hover:text-primary'>Blog</Link>
                             </li>
                             <li>
-                                <Link href="#page" className=''>Pages</Link>
+                                <Link href="#page" className='hover:text-primary'>Pages</Link>
                             </li>
                             <li>
-                                <Link href="#about" className=''>About</Link>
+                                <Link href="#about" className='hover:text-primary'>About</Link>
                             </li>
                             <li>
-                                <Link href="#shop" >Shop</Link>
+                                <Link href="#shop" className='hover:text-primary'>Shop</Link>
                             </li>
                             <li>
-                                <Link href="#contact">Contact</Link>
+                                <Link href="#contact" className='hover:text-primary'>Contact</Link>
                             </li>
                         </ul>
                     </div>

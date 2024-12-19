@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./styles/globals.css";
 import { Inter, Great_Vibes} from 'next/font/google'
-
+import NavigationWrapper from "./component/NavigationWrapper";
 
 
 const inter = Inter({
@@ -28,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${greatVibes.variable}`}>
       <body>
+      <NavigationWrapper />
         {children}
       </body>
     </html>
