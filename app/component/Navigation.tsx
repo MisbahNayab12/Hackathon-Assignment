@@ -29,7 +29,7 @@ export default function Navigation() {
                             <Link href="#about" className='hover:text-primary'>About</Link>
                         </li>
                         <li>
-                            <Link href="#shop" className='hover:text-primary' >Shop</Link>
+                            <Link href="/Shop" className='hover:text-primary' >Shop</Link>
                         </li>
                         <li>
                             <Link href="#contact" className='hover:text-primary'>Contact</Link>
