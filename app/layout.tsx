@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
 import "./styles/globals.css";
-import { Inter, Great_Vibes} from 'next/font/google'
+import { Inter, Great_Vibes } from 'next/font/google'
 import NavigationWrapper from "./component/NavigationWrapper";
-
+import ReduxProvider from "@/redux/features/provider";
+import Footer from './component/Footer'
 
 const inter = Inter({
   subsets: ['latin'],
-  variable: '--font-inter', 
+  variable: '--font-inter',
 });
 
 const greatVibes = Great_Vibes({
   subsets: ['latin'],
-  weight: '400', 
-  variable: '--font-great-vibes', 
+  weight: '400',
+  variable: '--font-great-vibes',
 });
 
 export const metadata: Metadata = {
@@ -28,8 +29,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${greatVibes.variable}`}>
       <body>
-      <NavigationWrapper />
-        {children}
+        <ReduxProvider>
+          <NavigationWrapper />
+          {children}
+          <Footer/>
+        </ReduxProvider>
       </body>
     </html>
   );

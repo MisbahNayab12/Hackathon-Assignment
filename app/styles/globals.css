@@ -19,3 +19,9 @@ body {
   color: var(--foreground);
   font-family: Helvetica, Arial, sans-serif;
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
