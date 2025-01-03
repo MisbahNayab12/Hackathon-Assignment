@@ -5,8 +5,7 @@ import Image from 'next/image'
 import CaretRight from '../../public/CaretRight.png'
 import { StaticImageData } from 'next/image'
 import Delete from '../../public/X.png'
-import { AppDispatch, useAppSelector } from '@/redux/features/store'
-import { useDispatch } from 'react-redux'
+import {useAppSelector } from '@/redux/features/store'
 import { useEffect } from 'react'
 import { useState } from 'react'
 
@@ -20,7 +19,7 @@ interface CartItem {
 }
 
 
-export default function page() {
+export default function Page() {
   const [CartItems, setCartItems] = useState<CartItem[]>([])
 
   const incrementCartItem = (index: number) => {
@@ -47,13 +46,13 @@ export default function page() {
     );
   };
 
-  const dispatch = useDispatch<AppDispatch>();
   const cartArray: CartItem[] = useAppSelector((state) => state.cartReducer)
 
 
   useEffect(() => {
     setCartItems(cartArray)
   }, [cartArray])
+  
   return (
     <div className='bg-white min-h-screen'>
       <div className="bg-hero-image bg-cover bg-center h-80 w-full flex justify-center items-center mt-[30px]">

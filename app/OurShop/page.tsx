@@ -15,7 +15,7 @@ import Shopimage8 from '../../public/Shopimage8.png'
 import Shopimage9 from '../../public/Shopimage9.png'
 import { useDispatch } from 'react-redux'
 import { AppDispatch, useAppSelector } from '@/redux/features/store'
-import { cart, updateCart } from '@/redux/features/cart-slice'
+import { updateCart } from '@/redux/features/cart-slice'
 
 interface Product {
     name: string;
@@ -34,7 +34,7 @@ interface CartItem {
     quantity: number
 }
 
-const page = () => {
+const Page = () => {
     const dispatch = useDispatch<AppDispatch>();
     const cartArray: CartItem[] = useAppSelector((state) => state.cartReducer)
 
@@ -151,7 +151,7 @@ const page = () => {
             <div className='flex justify-center gap-10 mt-20 lg:mx-8 xl:mx-[150px] flex-wrap'>
                 {
                     
-                    products.map((product, index) => (
+                    products.map((product) => (
                         <div key={product.id}>
                             <Image src={product.imagePath} alt="image" />
                             <div>
@@ -170,4 +170,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
